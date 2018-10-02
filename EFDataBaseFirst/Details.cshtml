@@ -1,0 +1,16 @@
+@model EFDataBaseFirst.Models.tblProducts
+
+<h2>Product Details</h2>
+
+<dl>
+<dt> Product Id </dt>
+<dd> @Model.ProductId </dt>
+
+<dt> Product Name </dt>
+<dd>@Model.Name </dd>
+
+<dt>Price</dt>
+<dd> @Model.Price </dt>
+</dl>
+<br/>
+@html.Actionlink("Back To Products","index",new{id=Model.Category_categoryId})

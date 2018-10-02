@@ -1,0 +1,14 @@
+@model IEnumareable<EFDataBaseFirst.Models.tblProducts>
+
+<h2> Products List</h2>
+<ol>
+    @foreach(var item in Model)
+	{
+	<li>
+	@Html.ActionLink(item.Name,"Details",New{id=item.ProductId})
+	</li>
+	}
+</ol>
+<br/>
+
+@Html.Actionlink("Back to Categories","index","categories")
